@@ -1,0 +1,14 @@
+
+1) Template Strings(surrounded by ``) & Expressions
+
+syntax: ${exp}
+
+e.g:
+let company: string = `Bharti Consulting Services`;
+let name: string = `Prashant Mirchandani`;
+let sentence: string = `Hello, my name is ${ name }.
+
+I am working in ${company}.`;
+
+
+

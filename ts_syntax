@@ -1,0 +1,136 @@
+* Declarations:
+
+1) Variables
+
+let/var/const variableName : dataType = value
+
+e.g: 
+
+let isDone: boolean = false;
+let decimal: number = 6;
+let hex: number = 0xf00d;
+let binary: number = 0b1010;
+let octal: number = 0o744;
+let color: string = "blue";
+
+
+
+2) let/var/const arrayName : dataType[] = value;
+
+		or
+let/var/const arrayName : Array<dataType> = value;
+
+e.g:
+
+let list: number[] = [1, 2, 3];
+let list: Array<number> = [1, 2, 3];
+
+3) Tuple 
+
+let/var/const tuppleName : [elem1_dataType, elem2_dataType , ....]
+
+e.g:
+
+let x: [string, number] = ["hello", 10 , "abc" , 122 , "xyz" , 256];
+
+
+4) Enum
+
+enum enumName {enum_elem1,enum_elem2,enum_elem3,.....}
+
+e.g:
+enum Color {Red, Green, Blue};
+enum Color {Red=1, Green, Blue}  (for starting the numbering from 1 instead of by default 0)
+enum Color {Red=1,Green=2,Blue=4} (for manually assiging the values)
+
+
+5) Type assertions (type cast)
+
+<dataType> variableName
+	Or
+variableName as dataType
+
+e.g:
+let someValue: any = "this is a string";
+let strLength: number = (someValue as string).length;
+
+
+6) Interfaces
+
+
+interface interface_name {
+	prop1_name : dataType;
+	prop2_name?: dataType;  // for optional property
+readonly prop3_name: dataType;  // readOnly Properties	
+ [propName: string]: any;	// to avoid excess property check	
+       function_name(arg1_name: arg1_dataType,....,argN_name: argN_dataType);
+}
+
+
+eg:
+
+1)
+interface LabelledValue {
+    label: string;
+}
+
+2)
+interface SquareConfig {
+    color?: string;
+    width?: number;
+}
+
+3)
+interface SquareConfig {
+    color?: string;
+    width?: number;
+[propName: string]: any;     //to avoid excess property check
+}
+
+
+4)
+interface SearchFunc {
+    (source: string, subString: string): boolean;
+}
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+    let result = source.search(subString);
+    return result > -1;
+}
+
+
+
+
+7) Classes 
+
+class class_name {
+
+prop1_name:dataType;
+prop2_name:dataType;
+.
+.
+.
+.
+propN_name:dataType;
+
+constructor(prop1_name:dataType,prop2_name:dataType,....,propN_name:dataType){
+this.prop1_name=prop1_name;
+this.prop2_name=prop2_name;
+.
+.
+.
+this.propN_name=propN_name;
+}
+
+function1_name(arg1:dataType,...,argN:dataType){
+//
+}
+
+}
+
+
+
+e.g: 
+
+
+ 

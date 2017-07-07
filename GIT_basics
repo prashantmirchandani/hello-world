@@ -1,0 +1,24 @@
+Basics:
+
+
+1)content-addressable filesystem
+2) "plumbing"(low level work commands)  and "porcelain"(User freindly commands)
+
+
+
+
+Work done:
+*) Setup/install git (connect with github uName and email using terminal)
+*) Created repository on github
+*) Started a branch  
+*) forked(producing a personal copy of someone else's project) repository octacat
+*) Pull request  
+
+
+terms:
+1) Branching
+2) Commits (any modifications are consider as commits)
+2) Opening Pull request 
+3) Fork & Pull Model (for open source project where you are not maintainer)
+   Shared Repository Model (when you are working on the project internally) 
+4) Upstream and downstream from remote repository	
